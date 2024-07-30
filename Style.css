@@ -1,0 +1,190 @@
+import 'header.css';
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/realistic-podium-sale-banner_23-2150956589.jpg?t=st=1721810153~exp=1721813753~hmac=39925461b15e205bd69d4d0e07ac160545703b4960e07a46ee173872aad408ad&w=1800') no-repeat center center ;
+    background-size: auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Product section styles */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--light-text-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+/* About section styles */
+#about {
+    background-color: var(--background-color);
+}
+
+#about h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact section styles */
+#contact h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid var(--light-text-color);
+    border-radius: 0;
+    padding-left: 0;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+
+dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border: 1px solid #495057;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item dropdown {
+    list-style-type: none;
+}
+
+.dropdown-menu li {
+    position: relative;
+    list-style: none; /* Ensure no list style markers */
+}
+
+.dropdown-menu a {
+    color: var(--text-color);
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none; /* Ensure no underline for links */
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    background-color: var(--background-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer h5 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #adb5bd !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar-right {
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-right li {
+    list-style: none;
+}
+
+.navbar-right a {
+    color: #000;
+    padding: 5px 8px;
+    text-decoration: none; /* Ensure no underline for links */
+    display: flex;
+}
+
+.navbar-right a:hover,
+.navbar-right a:focus {
+    color: #555;
+}
+
+.navbar-right .badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    top: 5px;
+    font-size: 12px;
+}
+
+.navbar-right .fa-cart-shopping,
+.navbar-right .fa-user {
+    font-size: 18px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+}
